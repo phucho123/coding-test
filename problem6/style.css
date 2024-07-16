@@ -64,10 +64,17 @@ body {
 }
 
 .temperature-display {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
+    font-weight: lighter;
+    line-height: 1;
+    position: relative;
 }
-
+.temperature-display::after {
+    content: 'o';
+    position: absolute;
+    font-size: 24px;
+}
 .extra-info {
     margin-top: 20px;
 }
