@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <script src="js/moment.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-content">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" name="city-search" id="city-search" placeholder="Search for a city...">
+            </div>
+            <div class="weather-info">
+                <p class="city-display">--</p>
+                <p class="weather-description">--</p>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-image">
+                <p class="temperature-display">--</p>
+            </div>
+        </div>
+        <div class="extra-info">
+            <div class="info-row">
+                <div class="info-item">
+                    <div class="info-label">Sunrise</div>
+                    <div class="info-value sunrise-time">--</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Sunset</div>
+                    <div class="info-value sunset-time">--</div>
+                </div>
+            </div>
+            <div class="info-row">
+                <div class="info-item">
+                    <div class="info-label">Humidity</div>
+                    <div class="info-value"><span class="humidity-level">--</span>%</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Wind Speed</div>
+                    <div class="info-value"><span class="wind-velocity">--</span> km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
